@@ -1,0 +1,47 @@
+SELECT *, Count(*)
+FROM Annotations_consolidated
+GROUP BY ID_Post
+HAVING Count(*) > 1
+
+SELECT *, Count(*)
+FROM Annotations_consolidated
+GROUP BY ID_Post
+HAVING Count(*) = 1
+
+SELECT *, Count(*)
+FROM Annotations_consolidated
+GROUP BY Category
+
+CREATE TABLE Posts_Annotated (
+    ID_Post           INTEGER PRIMARY KEY,
+    Status            INTEGER,
+    Headline          TEXT,
+    Body              TEXT,
+    PositiveVotes     INTEGER,
+    NegativeVotes     INTEGER,
+    ArgumentsUsed     INTEGER,
+    Discriminating    INTEGER,
+    Inappropriate     INTEGER,
+    OffTopic          INTEGER,
+    PersonalStories   INTEGER,
+    PossiblyFeedback  INTEGER,
+    SentimentNegative INTEGER,
+    SentimentNeutral  INTEGER,
+    SentimentPositive INTEGER
+);
+
+SELECT ID_Post,
+       Status,
+       Headline,
+       Body,
+       PositiveVotes,
+       NegativeVotes
+  FROM (
+           SELECT *
+             FROM Posts
+            WHERE ID_Post IN (
+                      SELECT ID_Post
+                        FROM Annotations_consolidated
+                       WHERE Category = "ArgumentsUsed"
+                  )
+       );
