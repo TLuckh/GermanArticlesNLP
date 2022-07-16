@@ -13,6 +13,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1698c675-effe-4a43-a7bd-f4bf187af600" />
+        <option name="url" value="https://github.com/TLuckh/GermanArticlesNLP.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectId" id="2Byr0cTgySO9t1PsbySoPmKr7Lo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,6 +55,7 @@
       <updated>1657888944315</updated>
       <workItem from="1657888945672" duration="1094000" />
       <workItem from="1657897828516" duration="17000" />
+      <workItem from="1657897859324" duration="277000" />
     </task>
     <servers />
   </component>
