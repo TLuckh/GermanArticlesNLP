@@ -1,0 +1,5 @@
+As Github employs a size limit for files which is smaller than the size of the used
+corpus, one has to manually download the data set from
+https://ofai.github.io/million-post-corpus/
+
+and add the SQL file "corpus.sqlite3" into this folder.
